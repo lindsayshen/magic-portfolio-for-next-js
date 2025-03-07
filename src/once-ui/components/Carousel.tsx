@@ -88,6 +88,7 @@ const Carousel: React.FC<CarouselProps> = ({
         speed="fast"
       >
         <SmartImage
+          fillWidth // Added fillWidth here
           sizes={sizes}
           priority
           radius="l"
