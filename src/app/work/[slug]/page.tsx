@@ -140,7 +140,7 @@ export default function Project({ params }: WorkParams) {
         }}
         />
       )}
-      <Column style={{ margin: "auto" }} as="article" width="100%">
+      <Column style={{ margin: "auto", width:"100%"}} as="article">
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && (
             <AvatarGroup reverse avatars={avatars} size="m" />
