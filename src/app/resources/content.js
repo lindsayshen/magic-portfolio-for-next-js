@@ -7,9 +7,9 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Product Designer",
-  avatar: "/images/lindsay.jpg",
-  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Mandarian"], // optional: Leave the array empty if you don't want to display languages
+  avatar: "/images/lindsay.jpg", // Make sure this path is correct
+  location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
+  languages: ["English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -39,7 +39,7 @@ const social = [
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "", // Add your X (Twitter) link here if you have one
   },
   {
     name: "Email",
@@ -52,19 +52,20 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Product Designer and builder</>,
+  headline: <>Product Designer and Builder</>, // Simplified "builder"
   subline: (
     <>
-      I'm Lindsay, a Product Designer at <InlineCode>JP Morgan</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Lindsay, a Product Designer at <InlineCode>J.P. Morgan</InlineCode>,
+      where I craft intuitive user experiences. I also enjoy building my own
+      projects.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "About Me", // Simplified
+  description: `Meet ${person.name}, a ${person.role} based in ${person.location}`, // More conversational
   tableOfContent: {
     display: true,
     subItems: false,
@@ -74,16 +75,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/lindsayshen", // Replace with your actual Calendly link
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Lindsay is a NYC-based Product Designer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Lindsay is a New York City-based Product Designer with a passion for
+        transforming complex challenges into simple, elegant design solutions.
+        Her work spans digital interfaces, interactive experiences, and the
+        convergence of design and technology.
       </>
     ),
   },
@@ -92,42 +94,102 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Product Designer",
+        company: "J.P. Morgan",  // Corrected company name
+        timeframe: "2023 - Present", //  Use a consistent timeframe format
+        role: "Product Designer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the redesign of the GLASS internal dashboard, improving
+            sales team efficiency and client management.  This resulted in a
+            streamlined workflow and improved data accessibility.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Co-led the strategic vision and workflow definition for the
+            modernization of J.P. Morgan Access, directly influencing the
+            product roadmap.
+          </>,
+           <>
+            Collaborated on the North Star vision, crafting streamlined and scalable workflows.
+          </>,
+          <>
+           Defined the 2024-2026 product roadmap via the Access North Star vision.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
+
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/access-north-star/overview.png",
+            alt: "J.P. Morgan Access North Star Overview",
             width: 16,
             height: 9,
           },
+           {
+            src: "/images/projects/access-north-star/payment-overview.png",
+            alt: "J.P. Morgan Payment Overview",
+            width: 16,
+            height: 9,
+          },
+           {
+              src: "/images/projects/glass/dashboard-before.jpg",
+              alt: "GLASS Dashboard Before",
+              width: 16,
+              height: 9,
+            },
+            {
+              src: "/images/projects/glass/dashboard-after.jpg",
+              alt: "GLASS Dashboard After",
+              width: 16,
+              height: 9,
+            },
+
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Vimeo",
+        timeframe: "2022-2023", // Example timeframe - adjust as needed
+        role: "UX/UI Designer (Project-Based)",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Redesigned Vimeo's video analytics section, improving the user
+            experience of the dashboard, streamlining filtering, and adding new
+            features based on user feedback.
+          </>,
+          // Add other achievements from your Vimeo project
+        ],
+        images: [
+             {
+                src: "/images/projects/vimeo-analytics/dashboard-before.jpg",
+                alt: "Vimeo Analytics Dashboard Before",
+                width: 16,
+                height: 9,
+              },
+              {
+                src: "/images/projects/vimeo-analytics/dashboard-after.jpg",
+                alt: "Vimeo Analytics Dashboard After",
+                width: 16,
+                height: 9,
+              },
+              {
+                src: "/images/projects/vimeo-analytics/filter-before.jpg",
+                alt: "Vimeo Analytics Filter Before",
+                width: 16,
+                height: 9,
+              },
+        ],
+      },
+      {
+        company: "Freelance",
+        timeframe: "2018 - 2022", // Example timeframe, combine if it overlaps
+        role: "Product Designer",
+        achievements: [
+          <>
+            Collaborated with various clients on diverse design projects, including website redesigns, mobile app development, and branding initiatives.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+           Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.
           </>,
+          // Add other freelance achievements.  Be specific!
         ],
         images: [],
       },
@@ -135,79 +197,104 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education", // Changed to "Education" - more standard
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Cornell University",  // Replace with your actual university
+        description: <>B.S. in Information Science</>, // Replace with your degree
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        {
+        name: "eCornell",  // Replace with your actual university
+        description: <>Certificate, Design Thinking</>, // Replace with your degree
       },
+      // Add more education entries as needed.
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: (
+          <>
+            Proficient in using Figma for UI design, prototyping, and
+            collaboration.  Experienced in creating and maintaining design
+            systems within Figma.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "HTML, CSS, JavaScript", // Grouped fundamental web technologies
+        description: (
+          <>
+            Strong understanding of front-end development principles.  Capable
+            of building static websites and prototypes.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
+      {
+        title: "React & Next.js",
+        description: (
+          <>
+            Experience with React and Next.js for building dynamic web
+            applications.  Familiar with component-based architecture and
+            server-side rendering.
+          </>
+        ),
+        images: [],
+      },
+        {
+        title: "User Research Methodologies",
+        description: (
+          <>
+            Skilled in conducting user interviews, usability testing, surveys, and data analysis to inform design decisions.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Agile & Lean UX",
+        description: (
+          <>
+            Experience working in Agile environments and applying Lean UX principles for iterative design and development.
+          </>
+        ),
+        images: [],
+      },
+
+      // Add other technical skills (e.g., specific design tools, prototyping tools, etc.)
     ],
   },
 };
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Writing", // Simplified
+  description: `Thoughts on design, technology, and more.`, // More concise
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
   label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  title: "Projects", // Simplified
+  description: `A selection of my design and development projects.`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  title: "Gallery", // Simplified
+  description: `A collection of personal photos.`, // More concise
+  // Images from https://pexels.com  (You should replace these with YOUR photos!)
   images: [
     {
       src: "/images/gallery/img-01.jpg",

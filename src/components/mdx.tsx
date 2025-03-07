@@ -71,15 +71,26 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
   }
 
   return (
-    <SmartImage
-      className="my-20"
-      enlarge
-      radius="m"
-      aspectRatio="16 / 9"
-      alt={alt}
-      src={src}
-      {...props}
+
+    <img
+    src={src}
+    style={{
+      width: "100%",
+      height: "auto",
+      borderRadius: "var(--radius-m)",
+      objectFit: "contain",
+    }}
     />
+
+    // <SmartImage
+    //   className="my-20 w-full"
+    //   enlarge
+    //   radius="m"
+    //   aspectRatio="16 / 9"
+    //   alt={alt}
+    //   src={src}
+    //   {...props}
+    // />
   );
 }
 

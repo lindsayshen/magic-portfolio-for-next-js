@@ -12,6 +12,7 @@ const routes = {
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
   "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  // "/work/vimeo": true,
 };
 
 const style = {
@@ -63,8 +64,8 @@ const effects = {
 };
 
 const display = {
-  location: true,
-  time: true,
+  // location: true,
+  // time: true,
 };
 
 const mailchimp = {
