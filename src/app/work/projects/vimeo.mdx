@@ -1,10 +1,8 @@
 ---
 title: "Vimeo Video Analytics Redesign"
-publishedAt: "2021-08-15" # Replace with actual publication date, or a reasonable estimate
+publishedAt: "2022-02-15" # Replace with actual publication date, or a reasonable estimate
 summary: "A case study on redesigning Vimeo's video analytics dashboard to improve user experience based on customer feedback."
-images: [
-  "/images/projects/vimeo/cover.png", # Replace with your actual image path
-]
+images: ["/images/projects/vimeo/cover.png"]
 ---
 
 ## Case Study: Improving the Video Analytics Experience
@@ -36,23 +34,46 @@ My engineer friend who works at Vimeo's video analytics team told me about the p
 
 Special thanks to Xiaoxin Ouyang (product manager) who contributed her valuable time, effort, and insights during this research process.
 
+<div style={{ display: "flex",  flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: "2rem",  margin: "2rem 0",}}>
+  
+  <div style={{ flex: "1 1 200px", minWidth: "200px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+![image](/images/projects/vimeo/Icon_lightbulb.png)
 ### Step 1
-
 Understand Vimeo's design language and the video analytics section's design and feature. 
+  </div>
 
-
-### Step 2
-
+  <div style={{ flex: "1 1 200px", minWidth: "200px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+  ![image](/images/projects/vimeo/Icon_user.png)
+  ### Step 2
 Read, categorize, and summarize over 6000 feedbacks from the Customer Satisfaction Report.
+</div>
 
+  <div style={{ flex: "1 1 200px", minWidth: "200px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+  ![image](/images/projects/vimeo/Icon_research.png)
 ### Step 3
-
 Do market research on competitors' video analytics feature and summarize for improvements.
+</div>
+
+</div>
 
 
 ### Research Results
 
 After doing the 3 steps shown above, we documented a lot of findings and the following table provides a glance shot at some main issues we found (some company sensitive content is blurred).
+
+<div style={{ display: "flex",  flexDirection: "row", flexWrap: "wrap", alignItems: "start", gap: "2rem",  margin: "2rem 0",}}>
+  
+  <div style={{ flex: "1 1 200px", minWidth: "200px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+  ![image](/images/projects/vimeo/rr1.jpg)
+  
+</div>
+
+  <div style={{ flex: "1 1 200px", minWidth: "200px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", }}>
+  ![image](/images/projects/vimeo/rr2.jpg)
+
+</div>
+
+</div>
 
 ![image](/images/projects/vimeo/p1r.png)
 ![image](/images/projects/vimeo/p2j.png)
@@ -76,6 +97,7 @@ After doing the 3 steps shown above, we documented a lot of findings and the fol
 - Poor space usage - requires constant scrolling to find basic information
 - Limited data insights - key metrics buried instead of visualized
 - No user control - can't customize, export, or share reports
+
 ![image](/images/projects/vimeo/hf1.png)
 
 **My design solution**
@@ -91,6 +113,7 @@ After doing the 3 steps shown above, we documented a lot of findings and the fol
 - Requires too many clicks 
 - Can't filter videos by folder; has limitations on showing video names
 - Doesn't provide save filter feature
+
 ![image](/images/projects/vimeo/f1.gif)
 
 **My design solution**
@@ -106,8 +129,11 @@ After doing the 3 steps shown above, we documented a lot of findings and the fol
 - Different types of reports are on different pages; can only edit secondary dimension for the table
 - Can't manage or reorder table columns
 - Can only download CSV file, report issue when the CSAT questionnaire pops up; can't share the page
+
 ![image](/images/projects/vimeo/r1.png)
+
 **My design solution**
+
 - Unified report view: combined data in one table, primary dimension selector dropdown, and streamlined data analysis
 - Flexible column management: toggle columns on/off, drag-and-drop reordering, and customizable data display
 - Enhanced header controls: download report, share view, report issues
@@ -124,34 +150,43 @@ style={{
     display: "flex", 
     flexDirection: "row",
     flexWrap: "wrap",
-    alignItems: "center",
+    alignItems: "start",
     gap: "2rem",  
     margin: "2rem 0",
   }}
 >
   <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
   }}>
-  <b>Video's version</b>
+  #### Video's version
+
   ![image](/images/projects/vimeo/v1.jpg)
 
-  <b>Special feature for webinar’s version -></b>
+  #### Special feature for webinar ->
+
   <li> Account that hosts webinar sessions will be able to see an email list of their audience. </li>
   <li> Cards above the email list table highlights some important data for account owner to skim through. </li>
 
   </div>
   <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
+    flex: "1 1 200px",
+    minWidth: "200px",
       display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "left",
+    alignItems: "left",
     
   }}>
-  <b> Webinar (live stream)'s version </b>
+
+  #### Webinar (live stream)'s version 
+  
   ![image](/images/projects/vimeo/v2.jpg)
+
   </div>
 </div>
 
@@ -164,29 +199,37 @@ style={{
     display: "flex", 
     flexDirection: "row",
     flexWrap: "wrap",
-    alignItems: "center",
+    alignItems: "start",
     gap: "2rem",  
     margin: "2rem 0",
   }}
 >
   <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
-  }}>
-  <b>Download Center</b>
-  ![image](/images/projects/vimeo/rs.png)
-  </div>
-  <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
+    flex: "1 1 200px",
+    minWidth: "200px",
       display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+  #### Download Center
+
+  ![image](/images/projects/vimeo/rs.png)
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
     
   }}>
-  <b>Filter Settings</b>
+  #### Filter Settings
+
   ![image](/images/projects/vimeo/rs2.png)
+
   </div>
 </div>
 
@@ -196,6 +239,7 @@ After a few quick testings with some users and meetings with Vimeo engineers, we
 
   - It's more user friendly to put filter categories horizontally on the top
   - The bars at the top need stronger distinction among each others
+
 ![image](/images/projects/vimeo/c1.png)
 
   - The filter types (Presets, New Filter, Saved Filters) have been moved to the left and aligned vertically as a side menu bar
@@ -215,14 +259,14 @@ After a few quick testings with some users and meetings with Vimeo engineers, we
   }}
 >
   <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
+    flex: "1 1 200px",
+    minWidth: "200px",
   }}>
   ![image](/images/projects/vimeo/c31.png)
   </div>
   <div style={{
-    flex: "1 1 300px",
-    minWidth: "300px",
+    flex: "1 1 200px",
+    minWidth: "200px",
       display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -239,6 +283,7 @@ After updating my designs, I ran another usability test within our team (8 peopl
 ![image](/images/projects/vimeo/validate.png)
 
 ## Learnings & Next Steps
+
 ![image](/images/projects/vimeo/learn.jpg)
 
 ### Fail fast, fail often

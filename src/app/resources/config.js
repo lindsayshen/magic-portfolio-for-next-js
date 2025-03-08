@@ -4,15 +4,15 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
+  "/blog": false,
   "/gallery": true,
 };
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
-  // "/work/vimeo": true,
+  "/work/jp-glass": true,
+  "/work/jp-north-star": true,
 };
 
 const style = {
