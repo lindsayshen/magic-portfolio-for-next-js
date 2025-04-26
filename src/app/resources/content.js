@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Product Designer",
-  avatar: "/images/lindsay_avatar.jpg", // Make sure this path is correct
+  avatar: "/images/avatar_lindsay.jpg", // Make sure this path is correct
   location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
   languages: ["English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
 };
