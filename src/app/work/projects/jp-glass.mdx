@@ -2,134 +2,510 @@
 title: "GLASS: Enhancing Portfolio Visibility for JPMC Sales Teams"
 publishedAt: "2022-06-06"  # Estimated based on Q1 2023 launch.  Adjust as needed.
 summary: "Redesigning the GLASS internal dashboard to improve sales team efficiency and client management, resulting in a streamlined workflow and improved data accessibility."
-images: [] # Add relevant image paths.  Examples:
-          # - "/images/projects/glass/dashboard-before.jpg"
+images: ["/images/projects/jp-glass/jpGlass_Cover1.png"]
+
+          # Add relevant image paths.  Examples:
           # - "/images/projects/glass/dashboard-after.jpg"
           # - "/images/projects/glass/wireframes.jpg"
           # - "/images/projects/glass/user-flow.jpg"
-team: [
-    {
-      name: "Your Name",  # Replace with your name
-      role: "Experience Lead",
-      avatar: "",  # Optional
-      linkedIn: ""  # Optional
-    },
-    {
-        name: "Experience Associate", #Replace with the name
-        role: "Experience Associate",
-        avatar: "",
-        linkedIn: ""
-    },
-     {
-        name: "Product Owner 1", #Replace with the name
-        role: "Product Owner",
-        avatar: "",
-        linkedIn: ""
-    },
-    {
-        name: "Product Owner 2", #Replace with the name
-        role: "Product Owner",
-        avatar: "",
-        linkedIn: ""
-    },
-     {
-        name: "James Sol",
-        role: "Creative Technologist",
-        avatar: "",
-        linkedIn: ""
-    }
-]
+
 ---
+{/*## Executive Summary*/}
+## 📌 Executive Summary
 
-## 1. Project Overview
+GLASS is an internal dashboard used by JPMorgan Chase sales teams to manage global client portfolios. The platform was hindered by fragmented tools, outdated data, and unintuitive workflows. I led the redesign effort to create a unified, real-time dashboard experience that empowers salespeople to focus on client engagement instead of manual data work.
 
-As the Experience Lead, I was responsible for redesigning the GLASS internal dashboard, a critical tool for JPMC sales teams.  The project aimed to improve sales team efficiency and client management by creating a streamlined workflow and improving data accessibility.
+While the full design was initially planned for a Q1 2023 launch, resource constraints postponed the rollout. However, core elements of the redesign were implemented through a Tableau-based interim solution, delivering immediate improvements to data access and workflow efficiency.
 
-## 2. The Challenge
+**My Role:** UX/UI Designer | 6-month project | Led end-to-end redesign  
+**Impact:** Anticipated 50% reduction in data retrieval time. Interim Tableau tool delivered early efficiency gains prior to full implementation.
 
-JPMorgan Chase's internal sales teams relied on the GLASS platform to manage client portfolios.  However, salespeople faced significant challenges:
+***
+***
+{/* ## 1. Project Overview*/}
+## 🗺️ 1. Project Overview
 
-*   **Fragmented Systems:**  Salespeople had to access multiple systems to get a complete picture of their client portfolios.
-*   **Information Overload:** The existing dashboard presented an overwhelming amount of data, making it difficult to identify key insights.
-*   **Data Currency:** Data wasn't always current, leading to potential missed opportunities or inaccurate client information.
-*   **Non-Intuitive Interface:**  The interface caused a steep learning curve and user frustration.
-*   **Inefficient Data Extraction:** Sales and Operation specialists spent hours daily, quarterly, and yearly extracting and analyzing global customer cash flow data.
-* **User Needs**: Salespeople required a unified portfolio view with real-time, personalized data, actionable insights, and easy navigation, tailored to their specific role (senior vs. junior sales).
+{/*As a designer, I led the design and execution phase of the GLASS internal dashboard redesign, a critical tool for JPMC sales teams.  This project aimed to improve sales team efficiency and client management by streamlining workflows and improving data accessibility.*/}
 
-## 3. My Role & Responsibilities
+GLASS is an internal dashboard used by JPMorgan Chase sales teams to manage global client portfolios. As a mission-critical tool, it supports client engagement, cash flow analysis, and portfolio strategy across multiple markets.
 
-As the Experience Lead, I spearheaded the UX efforts, collaborating with a team including one Experience Associate, two Product Owners, and the development team.  My responsibilities included:
+This redesign initiative aimed to modernize the experience by improving data accessibility, reducing time spent on manual tasks, and aligning the interface with the evolving needs of sales specialists. The ultimate goal: empower salespeople to spend less time wrestling with data and more time building relationships.
 
-*   **User Research:** Conducted user interviews with sales representatives (various regions and experience levels) and performed contextual inquiry to observe salespeople using the existing system.
-*   **Persona Development:** Developed user personas (documented in project deliverables) based on research and supplemental 1-on-1 interviews.
-*   **Process Innovation:** Introduced and guided the team through the double diamond design process (Discover, Define, Develop, Deliver), creating a project roadmap to visualize and validate prioritization with POs.
-*   **Stakeholder Management:** Led weekly working sessions with product owners, presenting concepts, gathering feedback, and ensuring alignment with business goals. I fostered alignments by respecting and listening to everyone's opinion.
-*   **Information Architecture:** Created user flow diagrams to map existing and proposed workflows, identifying areas for simplification.
-*   **Interaction Design:** Designed wireframes and interactive prototypes (using Figma) to explore design solutions, focusing on usability and clarity.
-*   **Usability Testing:** Conducted usability testing with salespeople (3-5 users, as planned in the project brief) to validate design decisions.
-*   **Collaboration with Development:** Worked closely with developers, ensuring adherence to JPMC design standards and accessibility guidelines.  Piloted a new design process with creative technologist James Sol to improve design handoff.
-*   **Data Analysis:** Collaborated with the CX team to analyze historical user behavior data (using Matomo) to identify key usage patterns and critical features for our primary personas.
-* **Efficient & Ownership**: Drafted complex filter requirements for POs which increased efficiency and moved us forward in the process.
-* **Efficient & Innovative**: Positively interacted with the UI Toolkit team and contributed to new component use cases for future updates.
-* **Ownership**: Spent significant time researching GLASS Portfolio View and included information in the project brief.
-*  **Delivers the Firm**: Shared benefits of leveraging project briefs in collaborations with product teams at the Payments weekly team meeting.
+***
+***
+{/*## 2. The Challenge*/}
+## 🧩 2. The Challenge
 
-## 4. The Process
+{/*JPMorgan Chase sales teams faced significant challenges due to inefficiencies in client portfolio management. These challenges stemmed from:
 
-The redesign followed the double-diamond design process:
+* **Fragmented Systems:** Disconnected tools hindered a unified view of client data.
+* **Information Overload:** Sales teams struggled to sift through excessive and often irrelevant data.
+* **Outdated Data:** The GLASS platform presented information that was not always current.
 
-*   **Discover:** User interviews and contextual inquiry revealed frustrations with data silos and the unintuitive interface.  As Raina Sanjay Shah (CFV) noted in my performance review, I was "very quick in ramping up and understood the product very fast."
-*   **Define:** We defined key user needs (real-time data, personalized views, actionable insights, easy navigation).  We prioritized features based on user impact and business value. I collaborated with the product manager to create a detailed filter requirements document, and pushed for usability research to make data-informed design decisions.
-*   **Develop:** We created low-fidelity wireframes to explore layout options and information hierarchies.  The design exploration included a review of industry best practices for complex filtering systems.  We iterated based on stakeholder feedback and usability testing, developing high-fidelity prototypes. Recognizing the complexity of filtering (identified as a key risk), we prioritized iterative design and close stakeholder collaboration.
-*   **Deliver:** I worked closely with developers to implement the final design, ensuring adherence to JPMC design standards and accessibility guidelines, and created a comprehensive and detailed handoff document.
+***
+These issues resulted in:
 
-## 5. The Solution
+* An estimated **15%** reduction in time spent on direct client engagement.
+* A **10%** increase in reported frustration among salespeople over the past year.
+* Sales and Operation specialists spending an average of **2-3 hours daily** extracting and analyzing global customer cash flow data, hindering their ability to focus on strategic tasks.
+* A steep learning curve and potential errors in accessing critical client information due to a non-intuitive interface.
 
-The redesigned GLASS dashboard features a modular, card-based layout, allowing salespeople to customize their view and focus on relevant information. Key features include:
+***
+**Proposed Solution:**
 
-*   **Real-time Data Updates:**  Salespeople have access to the most current information.
-*   **Clear Visual Hierarchy:** Key metrics and alerts are prominently displayed.
-*   **Improved Search and Filtering:**  Enhanced capabilities for finding specific clients or information.
-*   **System Integration:** Seamless integration with other JPMC systems.
-*   **Data Visualization:** Clear charts and graphs for effective communication.
-*   **Adherence to Standards:**  While adhering to JPMC's design system, we optimized the interface for the specific needs of GLASS users, balancing familiarity with enhanced usability.
+By redesigning the GLASS internal dashboard to provide a unified portfolio view with real-time, personalized data, actionable insights, and easy navigation, we aimed to:
 
-*(Include images of the redesigned dashboard and other key features, referencing the paths in the frontmatter.)*
+* Reduce time spent on data extraction by **50%.**
+* Increase time spent on client engagement by **15%.**
+* Improve overall user satisfaction by **20%.**
 
-![Dashboard Before](/images/projects/glass/dashboard-before.jpg)  {/*  Replace with your actual image path */}
-![Dashboard After](/images/projects/glass/dashboard-after.jpg)   {/*  Replace with your actual image path */}
-![Wireframes](/images/projects/glass/wireframes.jpg)        {/*  Replace with your actual image path */}
+Ultimately, this redesign sought to improve sales team efficiency and client management.*/}
 
-## 6. Results & Impact
+Despite its importance, the legacy GLASS platform presented significant usability issues:
 
-The redesigned GLASS dashboard MVP was successfully handed off to the development team, with an expected launch in Q1 2023.
+* **Fragmented Tools:** Disconnected systems made it hard to get a unified client view.
+* **Information Overload:** Salespeople struggled to filter out irrelevant data.
+* **Outdated Data:** Delays in data refresh cycles reduced confidence in decision-making.
+* **Complex Interface:** A steep learning curve and unclear navigation led to inefficiencies.
 
-**Qualitative:**
+These challenges had measurable consequences:
+* A **15% reduction** in time spent on direct client engagement.
+* A **10% increase** in reported frustration among salespeople.
+* Sales operations specialists lost **2–3 hours per day** manually extracting and analyzing data.
 
-*   Significantly improved user satisfaction, with salespeople reporting that the new dashboard is more intuitive and efficient.
-*   Reduced time spent gathering information.
-*   Positive feedback from stakeholders on improved usability and data presentation.  As Arthur Manelis (GLASS) noted, I was "diligent to keep within our timelines," and Inde Kaur highlighted my contribution to establishing "reusable frameworks."
+The team needed a unified, intuitive, real-time dashboard to solve these problems — and I was brought in to lead the design execution.
 
-**Quantitative (Hypothetical):**
 
-*   Reduced average time to complete key tasks (e.g., portfolio review) by 15%.
-*   Increased user adoption rate by 20% compared to the previous system.
+{/*JPMorgan Chase sales teams struggle with inefficient client portfolio management due to fragmented systems, information overload, and outdated data within the GLASS platform. 
+This inefficiency has led to significant challenges, including an estimated 15% reduction in time spent on direct client engagement and a 10% increase in reported frustration among salespeople in the past year. Sales and Operation specialists also spend an average of 2-3 hours daily extracting and analyzing global customer cash flow data, hindering their ability to focus on more strategic tasks. Furthermore, the non-intuitive interface contributes to a steep learning curve and potential errors in accessing critical client information.
 
-*(Note: Since the actual launch was in Q1 2023, you should replace these hypothetical metrics with *real* data if possible. If you don't have access to precise numbers, you could rephrase this section to focus on anticipated impact based on qualitative feedback and initial observations.)*
+By redesigning the GLASS internal dashboard to provide a unified portfolio view with real-time, personalized data, actionable insights, and easy navigation, we can potentially reduce time spent on data extraction by 50%, increase time spent on client engagement by 15%, and improve overall user satisfaction by 20%, ultimately leading to improved sales team efficiency and client management.*/}
 
-## 7. Lessons Learned/Next Steps
+***
+***
+{/*## 3. Case Study Brief*/}
+## 🎯 3. Case Study Brief
 
-*   The project reinforced the value of proactive communication, stakeholder engagement, and clear processes.
-*   The research phase was invaluable in understanding user workflows.
-*   Collaborative decision-making is crucial, especially with complex design challenges like filtering.
-*   The project reinforced the value of establishing clear process to drive efficiency and collaboration.
-* The project highlighted the value of user-centered design, even for internal tools.
-*   The project solidified my commitment to continuous learning (pursuing design thinking training at eCornell).
-* Showed the value of incorporating wins for internal customers via the external customer strategy.
-*   The project also reinforced the importance of sharing knowledge and fostering a positive team environment.
+I joined the project after the initial discovery phase, taking on the role of Designer to lead the subsequent design and execution efforts. The initial discovery work, including user interviews and contextual inquiry, was conducted by the Design Lead, who established the framework, navigation map, and information architecture for the dashboard.
+* **My Role:** UX/UI Design, Stakeholder Management, Prototyping, Usability Testing, Requirements Drafting
+* Led design execution from low-fidelity to dev handoff, focusing on complex filtering UX and stakeholder alignment.
+* **Team:** 1 Designer (me), 1 Design Lead (discovery), 2 Product Owners, 1 Creative Technologist, 1 Development Team
+* **Framework:** Double Diamond Design with iterative loops
+* **Timeline:** 6 months (Q1 2023 target)
+* **Tools:** Figma, LucidSpark, UserZoom, JPMC UIToolkit, Excel
 
-**Next Steps:**
+I led weekly working sessions, designed and tested multiple interaction models (with a focus on filtering), created annotated handoff documents for development, and contributed to the internal design system.
 
-*   Gather post-launch user feedback and iterate on the design.
-*   Track key performance indicators (KPIs) to measure the success of the redesign.
-*   Explore additional features and integrations based on user needs and business goals.
+
+{/**   **Leveraged Existing User Research:** Upon joining the team, I thoroughly reviewed and synthesized findings from user interviews and contextual inquiries conducted by the Design Lead. This foundational understanding of sales representatives' workflows and pain points informed my subsequent design decisions.
+*   **Contributed to Persona Development:** Building upon the initial user research, I further refined and developed user personas. This involved conducting supplemental 1-on-1 interviews and incorporating user profile data to create comprehensive representations of our target audience, which were documented in project deliverables.
+*   **Introduced and Guided Process Innovation:** Introduced and guided the team through the double diamond design process, creating a project roadmap to visualize and validate prioritization with Product Owners.
+*   **Led Stakeholder Management:** Led weekly working sessions with product owners, presenting design concepts and gathering feedback to ensure alignment with business goals.
+*   **Created Information Architecture:** Created user flow diagrams to map existing and proposed workflows, identifying key areas for simplification and improved user experience.
+*   **Designed Interaction:** Designed wireframes and interactive prototypes (using Figma) to explore various design solutions focused on improving usability and clarity for the sales teams.
+*   **Conducted Usability Testing:** Conducted usability testing sessions with salespeople to gather valuable feedback and validate key design decisions before development.
+*   **Collaborated with Development:** Collaborated closely with the development team throughout the implementation phase, ensuring adherence to JPMC design standards and accessibility guidelines.
+*   **Analyzed Data:** Analyzed historical user behavior data (using Matomo) in collaboration with the CX team to identify key usage patterns and inform design decisions for our primary personas.
+* **Drafted Requirements**: Drafted complex filter requirements for Product Owners, which significantly increased the efficiency of the development process.
+* **Contributed to UI Toolkit**: Contributed to the UI Toolkit team (the design system team) by providing feedback and suggesting new component use cases based on the needs of the GLASS dashboard.
+* **Conducted Qualitative User Research**: Conducted 1-on-1 interviews with internal employees to understand their needs and preferences for the default dashboard view, as well as their requirements for personalization options. This research directly informed the design of the redesigned GLASS dashboard.
+*  **Shared Project Brief Benefits**: Shared the benefits of leveraging project briefs with product teams during the Payments weekly team meeting, promoting more efficient collaboration across teams.*/}
+
+***
+***
+{/*## 4. The Process: A Design Thinking Journey*/}
+## 🛠️ 4. The Process: A Design Thinking Journey
+
+The redesign of the GLASS dashboard was guided by the Double Diamond design process, a framework that emphasizes user-centered problem-solving. However, our process was not strictly linear; it involved iterations and revisiting of phases as new information emerged and the design evolved. Here's a detailed look at how we moved through each phase:
+
+{/**   **Discover:** User interviews and contextual inquiry revealed frustrations with data silos and the unintuitive interface.
+*   **Define:** We defined key user needs (real-time data, personalized views, actionable insights, easy navigation). We prioritized features based on user impact and business value. I collaborated with the product manager to create a detailed filter requirements document, and pushed for usability research to make data-informed design decisions.
+*   **Develop:** I created low-fidelity wireframes to explore layout options and information hierarchies.  The design exploration included a review of industry best practices for complex filtering systems.  I iterated based on stakeholder feedback and usability testing, developing high-fidelity prototypes. Recognizing the complexity of filtering (identified as a key risk), I prioritized iterative design and close stakeholder collaboration.
+*   **Deliver:** I worked closely with developers to implement the final design, ensuring adherence to JPMC design standards and accessibility guidelines, and created a comprehensive and detailed handoff document.*/}
+***
+{/*### 4.1 Initial Discovery: Foundation Laid by the Design Lead*/}
+### 🔍 4.1 Initial Discovery
+The Design Lead initiated the project with the following activities:
+
+***
+**1. User Interviews:** Conducted interviews with salespeople to gather initial insights into their workflows, pain points, and needs related to the GLASS platform.
+
+ ![image](/images/projects/jp-glass/empathize.png)
+
+***
+***
+**2. Contextual Inquiry:** Observed salespeople in their work environment to understand how they interacted with the dashboard and related tools.
+
+<div
+style={{
+    display: "flex", 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "start",
+    gap: "2rem",  
+    margin: "0",
+  }}
+>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+  ###### Current Journey Map
+![image](/images/projects/jp-glass/current_journey_map.png)
+
+
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+
+  ###### Proposed Journey Map
+ ![image](/images/projects/jp-glass/define_new_journey_map.png)
+
+  </div>
+</div>
+
+
+***
+**3. Initial Framework and Navigation Map:** Established the basic framework and navigation map (information architecture) for the redesigned dashboard.
+
+<div
+style={{
+    display: "flex", 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "start",
+    gap: "2rem",  
+    margin: "0",
+  }}
+>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+  ###### Framework Ideation 
+![image](/images/projects/jp-glass/define.png)
+
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+
+  ###### Navigation Map
+![image](/images/projects/jp-glass/navigation_map.png)
+
+  </div>
+</div>
+
+This initial discovery work provided a foundation for the subsequent design phases.
+
+***
+***
+{/*### 4.2 Deep Dive into Filtering Requirements*/}
+### 🧮 4.2 Filtering Requirements
+Filtering was the most complex and critical part of the redesign. With diverse user roles ranging from junior sales assistants to regional leads, we needed a flexible, role-based filtering system that could surface relevant data quickly. I captured these needs in Excel to align with product managers’ workflows, enabling structured review and shared understanding across stakeholders. This approach streamlined handoff, reduced miscommunication, and became a reference point for developers throughout implementation.
+{/*Upon joining the project, I focused on a critical aspect of the redesign: the filtering process.
+
+* **Complex Requirements and Diverse Personas**: We discovered a wide range of internal roles, varying in seniority and responsibilities, each with distinct needs and priorities for the dashboard view. This necessitated a nuanced approach to filtering, ensuring that each user could efficiently access their relevant data.
+* **Clarifying Requirements with Excel**: To effectively capture these complex filtering requirements, I took the initiative to document them in Excel — a tool familiar to our Product Managers. This approach served to create a structured format for role-based filtering needs, facilitate PM review and validation, ensure shared understanding among stakeholders, and streamline requirements gathering and communication.*/}
+
+
+<div
+style={{
+    display: "flex", 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "start",
+    gap: "2rem",  
+    margin: "0",
+  }}
+>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+  ###### Persona Profile
+
+  ![image](/images/projects/jp-glass/persona_file.png)
+
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+
+  ###### Filter Requirements
+  
+  ![image](/images/projects/JP-GLASS/Filter_Requirements.png)
+
+  </div>
+</div>
+
+***
+***
+{/*### 4.3 Iterative Design and Validation*/}
+### 🔁 4.3 Iterative Design and Validation
+
+We tested two design approaches to improve the filtering experience and “Save View” functionality. Based on feedback and efficiency metrics, we refined our solution to prioritize simplicity and clarity.
+
+<p>&nbsp;</p>
+<details>
+  <summary><strong>Option 1: Separate Widget Customization</strong></summary>
+  
+  This option allowed users to configure filters and “View By” settings individually within each widget. However, testing revealed friction: saving a default view required multiple clicks, and interacting with time filters in side drawers slowed users down.
+
+  > _User feedback:_ “Data visualization is clear and filters are easy to use, gain of time.”
+  
+  ![image](/images/projects/jp-glass/Save1.png)
+
+</details>
+
+<p>&nbsp;</p>
+<details>
+  <summary><strong>Option 2: Consolidated Page-Level Filtering</strong></summary>
+
+  This approach enabled users to make all filter and visualization selections at the page level, reducing clicks and improving performance. It also introduced a dropdown-based “Save View” feature for easier default configuration.
+
+  > _User feedback:_ “The process of selecting options to view data is very clear...”
+  
+  ![image](/images/projects/jp-glass/Save2.png)
+
+  60% of users preferred this streamlined layout, citing better usability and clarity.
+
+  ![image](/images/projects/jp-glass/Survey_result.png)
+
+</details>
+
+<p>&nbsp;</p>
+We used these results to refine the problem we were solving: not simply offering customization, but creating a filtering experience that balances flexibility, clarity, and speed — optimized for real-world usage. Prioritizing performance and ease of use became key drivers in the final design direction.
+
+
+{/*Our design process involved significant iteration and validation, particularly around the filtering functionality:
+
+{/** **Prototyping and Usability Testing:** We conducted usability testing using UserZoom (click tests) and interviews with internal employees to understand their preferences for the filtering process and the placement of filters. This phase involved evaluating two distinct approaches to the "Save View" functionality:
+    * **Option 1: Separate Widget Customization:** This option allowed users to configure filters and "View By" settings independently for each widget. However, usability testing revealed that saving a default view required multiple clicks ("Save and Apply" button), leading to a potentially cumbersome user experience. Additionally, users noted that selecting timeframes within the widget could be time-consuming due to the side drawer loading.
+    ![image](/images/projects/jp-glass/Save1.png)
+    _(User feedback from interview: "Data visualization is clear and filters are easy to use, gain of time")_
+    * **Option 2: Consolidated Page-Level Filtering:** This option streamlined the process by having users make all filtering and data visualization selections at the page level. Timeframes and time comparisons were moved directly to the widget level. A "Save View" button with a dropdown menu allowed users to save their preferred configuration as the default view. 
+    ![image](/images/projects/jp-glass/Save2.png)
+    _(User feedback from interview: "...the process of selecting options to view visualized data is very clear..."; "Feature looks good and helpful to understand the client balance...")_
+  * This approach (Option 2) simplified the process, reducing the number of clicks and improving efficiency. Users found this option simpler, clearer, and easier to use, as shown in survey results where 60% preferred Option 2.
+ ![image](/images/projects/jp-glass/Survey_result.png)
+* **Refining the Problem Definition:** The insights from these tests and interviews helped us to further refine our understanding of the problem. We learned that the filtering needed to be not only powerful but also intuitive and easily accessible within the dashboard interface. The iterative evaluation of Option 1 and Option 2 led to a key refinement of the problem definition:
+    * **Initial Problem Definition:** "How to provide users with flexible view customization options."
+    * **Refined Problem Definition:** "How to provide users with an efficient and intuitive way to customize and save dashboard views, balancing flexibility with ease of use and performance."
+    * By prioritizing simplicity and efficiency based on user feedback, we aimed to reduce user effort and improve the overall experience of the GLASS dashboard.
+<p>&nbsp;</p>
+* **Prototyping and Usability Testing:** We conducted usability testing using UserZoom (click tests) and interviews with internal employees to understand their preferences for the filtering process and the placement of filters. This phase involved evaluating two distinct approaches to the "Save View" functionality:
+    <p>&nbsp;</p>
+    * **Option 1: Separate Widget Customization:** This option allowed users to configure filters and "View By" settings independently for each widget. However, usability testing revealed that saving a default view required multiple clicks ("Save and Apply" button), leading to a potentially cumbersome user experience. Additionally, users noted that selecting timeframes within the widget could be time-consuming due to the side drawer loading.
+    <p>&nbsp;</p>
+    ![image](/images/projects/jp-glass/Save1.png)
+    _(User feedback from interview: "Data visualization is clear and filters are easy to use, gain of time")_
+    <p>&nbsp;</p>
+    * **Option 2: Consolidated Page-Level Filtering:** This option streamlined the process by having users make all filtering and data visualization selections at the page level. Timeframes and time comparisons were moved directly to the widget level. A "Save View" button with a dropdown menu allowed users to save their preferred configuration as the default view.
+    <p>&nbsp;</p>
+    ![image](/images/projects/jp-glass/Save2.png)
+    _(User feedback from interview: "...the process of selecting options to view visualized data is very clear..."; "Feature looks good and helpful to understand the client balance...")_
+  <p>&nbsp;</p>
+  * This approach (Option 2) simplified the process, reducing the number of clicks and improving efficiency. Users found this option simpler, clearer, and easier to use, as shown in survey results where 60% preferred Option 2.
+ <p>&nbsp;</p>
+ ![image](/images/projects/jp-glass/Survey_result.png) 
+**Refining the Problem Definition:** Through iterative testing and user feedback on "Save View" options, we refined our understanding of user needs, shifting the focus from flexible view customization to prioritizing an efficient and intuitive way to customize and save dashboard views, balancing ease of use and performance. This process was central to aligning stakeholder expectations and user needs, and ultimately led to a solution that was both user-friendly and technically feasible.*/}
+
+***
+***
+{/*### 4.4 Deliver: Implementation and Handoff*/}
+### 📦 4.4 Deliver
+
+The final phase, Deliver, focused on bringing the design to life. Given the extensive work done in the previous phase to solidify requirements and validate design decisions, the team moved directly into implementation.
+ <p>&nbsp;</p>
+* **Contribution to JPMC UIToolkit:** I contributed to the JPMC UIToolkit design system by providing new use cases for custom calendars. This included designing a flexible calendar component that allows users to view portfolio data and make comparisons across various timeframes, from preset options to custom date ranges, for both "Portfolio Over Time" and "Portfolio Insights" features.
+   <p>&nbsp;</p>
+ ![image](/images/projects/jp-glass/calendar.png)
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+* **Comprehensive Handoff Document:** To ensure a smooth transition to the development team, I created a comprehensive and detailed handoff document. This document included all the necessary design assets, specifications, and guidelines for implementation, with a dedicated section on the filtering logic and user interactions.
+   <p>&nbsp;</p>
+ ![image](/images/projects/jp-glass/annotations.png)
+ _(This is a screenshot of a section of the design handoff document with annotations)_
+
+{/*
+<div
+style={{
+    display: "flex", 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "start",
+    gap: "2rem",  
+    margin: "2rem 0",
+  }}
+>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+  ##### Phase 1 Design
+
+  ![image](/images/projects/jp-glass/glass_design2.jpg)
+
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+    
+  }}>
+
+  ##### Phase 2 Design
+  
+  ![image](/images/projects/JP-GLASS/glass_design1.jpg)
+
+  </div>
+</div>*/}
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+{/*## 5. The Solution*/}
+## 💡 5. The Solution
+
+The redesigned GLASS dashboard features a modular, card-based layout, enabling salespeople to customize their view and focus on relevant information. Key features include:
+
+* **Real-time Data Updates:** Salespeople have access to the most current information.
+* **Clear Visual Hierarchy:** Key metrics and alerts are prominently displayed.
+* **Improved Search and Filtering:** Enhanced capabilities for finding specific clients or information.
+* **System Integration:** Seamless integration with other JPMC systems.
+* **Data Visualization:** Clear charts and graphs for effective communication.
+* **Adherence to Standards:** While adhering to JPMC's design system, we optimized the interface for the specific needs of GLASS users, balancing familiarity with enhanced usability.
+
+
+ <p>&nbsp;</p>
+  ##### Current GLASS Sales Dashboard Experience
+![image](/images/projects/jp-glass/current_GLASS_experience.png)
+ {/*  Replace with your actual image path */}
+
+ <p>&nbsp;</p>
+  ##### Future GLASS Sales Dashboard Experience
+With a validated design in hand, we prepared for development. However, resourcing limitations changed our timeline — leading to an alternative path that still delivered impact.
+
+<div
+style={{
+    display: "flex", 
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignItems: "start",
+    gap: "2rem",  
+    margin: "0",
+  }}
+>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+  }}>
+
+   ###### Sales Segment Regions (Monthly Average)
+  ![image](/images/projects/JP-GLASS/PortfolioView_2.png)
+
+  </div>
+  <div style={{
+    flex: "1 1 200px",
+    minWidth: "200px",
+      display: "flex",
+    flexDirection: "column",
+    justifyContent: "left",
+    alignItems: "left",
+
+  }}>
+
+   ###### Sales Segment Regions (Spot)
+  ![image](/images/projects/jp-glass/PortfolioView_1.png)
+
+
+  </div>
+</div>
+
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+{/*## 6. Results & Impact*/}
+## 📈 6. Results & Impact
+While the redesigned GLASS dashboard was initially slated for launch in Q1 2023, the rollout was delayed due to limited technical development resources.
+
+{/*### Interim Tableau Implementation*/}
+### 📊 Interim Tableau Implementation
+
+To continue delivering value in the meantime, key elements of the new design were adapted into an internal Tableau dashboard. This interim solution significantly improved sales team efficiency by enhancing data accessibility and streamlining portfolio analysis.
+
+**Key Outcomes:**
+
+* Design assets were successfully handed off for future implementation.
+* Tableau version enabled quicker access to portfolio data, reducing manual effort.
+* Salespeople reported improved efficiency in identifying client trends and actions.
+
+This approach ensured that even without full development, the design vision still contributed to immediate business impact.
+
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+{/*## 7. Lessons Learned & Next Steps*/}
+## 🧠 7. Lessons Learned & Next Steps
+
+ ![image](/images/projects/jp-glass/learning.jpg)
+
+This project reinforced several key principles of effective UX design within a complex enterprise environment:
+
+* **User-Centered Design Is Non-Negotiable:** Even internal tools benefit significantly from empathy-driven design.
+* **Iterative Design Yields Better Outcomes:** Revisiting early decisions allowed the team to adapt to changing requirements and user needs.
+* **Research Drives Clarity:** Contextual inquiry and user interviews helped frame the right problem and prioritize what mattered most.
+* **Cross-Functional Process Drives Results:** Early stakeholder input, clear documentation, and structured collaboration all contributed to successful alignment.
+
+
+### 🪜 Next Steps
+
+* **Post-Launch Feedback Loop:** Collect user feedback from the Tableau interim dashboard and validate core assumptions.
+* **Track KPIs:** Measure adoption, task efficiency, and user satisfaction to assess the long-term impact.
+* **Prepare for Full Rollout:** Incorporate feedback, refine designs, and support the development team as technical capacity becomes available.
+* **Explore Future Enhancements:** Identify new features and integration opportunities to further improve user experience and business value.

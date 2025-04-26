@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Product Designer",
-  avatar: "/images/lindsay.jpg", // Make sure this path is correct
+  avatar: "/images/lindsay_avatar.jpg", // Make sure this path is correct
   location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
   languages: ["English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -55,9 +55,7 @@ const home = {
   headline: <>Product Designer and Builder</>, // Simplified "builder"
   subline: (
     <>
-      I'm Lindsay, a Product Designer at <InlineCode>J.P. Morgan</InlineCode>,
-      where I craft intuitive user experiences. I also enjoy building my own
-      projects.
+      I'm Lindsay — a Product Designer at <InlineCode>J.P. Morgan</InlineCode> intuitive user experiences and driving product thinking. I explore creativity through side projects, photography, music, and baking.
     </>
   ),
 };
