@@ -159,6 +159,18 @@ export default function Project({ params }: WorkParams) {
         <CustomMDX source={post.content} />
       </Column>
 
+      <Flex fillWidth horizontal="end">
+        <Button
+          variant="primary"
+          size="s"
+          weight="default"
+          prefixIcon="arrowUp"
+          href="#"
+        >
+          Back to top
+        </Button>
+      </Flex>
+
       {(previousPost || nextPost) && (
         <Flex fillWidth horizontal="space-between">
           {previousPost ? (
