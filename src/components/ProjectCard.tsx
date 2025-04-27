@@ -67,7 +67,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Flex gap="24" wrap>
               {content?.trim() && (
                 <SmartLink
-                  suffixIcon="arrowRight"
+                  suffixIcon="chevronRight"
                   style={{ margin: "0", width: "fit-content" }}
                   href={href}
                 >

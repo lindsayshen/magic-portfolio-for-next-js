@@ -8,6 +8,7 @@ import {
   Flex,
   Heading,
   SmartImage,
+  SmartLink,
   Text,
 } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
@@ -80,6 +81,14 @@ export default function Project({ params }: WorkParams) {
     (post) => post.slug === params.slug
   );
 
+  const allPosts = getPosts(["src", "app", "work", "projects"]);
+  const currentIndex = allPosts.findIndex((p) => p.slug === params.slug);
+  const nextPost =
+    currentIndex >= 0 && currentIndex < allPosts.length - 1
+      ? allPosts[currentIndex + 1]
+      : null;
+  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+
   if (!post) {
     notFound();
   }
@@ -128,19 +137,17 @@ export default function Project({ params }: WorkParams) {
       </Column>
 
       {post.metadata.images.length > 0 && (
-
-
         <img
-        src={post.metadata.images[0]}
-        style={{
-          width: "100%",
-          height: "auto",
-          borderRadius: "var(--radius-m)",
-          objectFit: "cover",
-        }}
+          src={post.metadata.images[0]}
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: "var(--radius-m)",
+            objectFit: "cover",
+          }}
         />
       )}
-      <Column style={{ margin: "auto", width:"100%"}} as="article">
+      <Column style={{ margin: "auto", width: "100%" }} as="article">
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && (
             <AvatarGroup reverse avatars={avatars} size="m" />
@@ -151,6 +158,47 @@ export default function Project({ params }: WorkParams) {
         </Flex>
         <CustomMDX source={post.content} />
       </Column>
+
+      {(previousPost || nextPost) && (
+        <Flex fillWidth horizontal="space-between">
+          {previousPost ? (
+            <Button
+              href={`/work/${previousPost.slug}`}
+              prefixIcon="chevronLeft"
+              variant="tertiary"
+              weight="default"
+              size="l"
+              style={{
+                justifyContent: "flex-start", // push icon + text left
+                paddingLeft: "0", // remove left padding
+              }}
+            >
+              {previousPost.metadata.title.split(":")[0]}
+            </Button>
+          ) : (
+            <div />
+          )}
+
+          {nextPost ? (
+            <Button
+              href={`/work/${nextPost.slug}`}
+              suffixIcon="chevronRight"
+              variant="tertiary"
+              weight="default"
+              size="l"
+              style={{
+                justifyContent: "flex-end", // push text + icon to the right
+                paddingRight: "0", // remove right padding
+              }}
+            >
+              {nextPost.metadata.title.split(":")[0]}
+            </Button>
+          ) : (
+            <div />
+          )}
+        </Flex>
+      )}
+
       <ScrollToHash />
     </Column>
   );
