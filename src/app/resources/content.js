@@ -27,11 +27,6 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/lindsayshen",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/lindsayshen/",
@@ -52,10 +47,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Product Designer and Builder</>, // Simplified "builder"
+  headline: <>Product Designer and Builder</>,
   subline: (
     <>
-      I'm Lindsay — a Product Designer at <InlineCode>J.P. Morgan</InlineCode> intuitive user experiences and driving product thinking. I explore creativity through side projects, photography, music, and baking.
+      I'm Lindsay — a Product Designer at <InlineCode>J.P. Morgan</InlineCode>, crafting intuitive user experiences and driving product thinking. Outside of work, I explore creativity through side projects, photography, music, and baking.
     </>
   ),
 };
@@ -80,195 +75,102 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Lindsay is a New York City-based Product Designer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Hi, I’m Lindsay Shen — a Product Designer based in New York City with 5+ years of experience turning complex business needs into intuitive digital experiences. My work spans enterprise platforms, consumer apps, and startup products.
+        <br /><br />
+        At J.P. Morgan, I co-led the Access North Star initiative and redesigned internal platforms like GLASS to drive efficiency and impact for 400k+ users. Previously, I redesigned Vimeo’s video analytics dashboard and helped emerging startups launch user-centered products.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Work Snapshot",
     experiences: [
       {
         company: "J.P. Morgan",  // Corrected company name
-        timeframe: "2023 - Present", //  Use a consistent timeframe format
-        role: "Product Designer",
+        timeframe: "Jun 2022 – Present", //  Use a consistent timeframe format
+        role: "Senior UX Designer",
         achievements: [
-          <>
-            Led the redesign of the GLASS internal dashboard, improving
-            sales team efficiency and client management.  This resulted in a
-            streamlined workflow and improved data accessibility.
-          </>,
-          <>
-            Co-led the strategic vision and workflow definition for the
-            modernization of J.P. Morgan Access, directly influencing the
-            product roadmap.
-          </>,
-           <>
-            Collaborated on the North Star vision, crafting streamlined and scalable workflows.
-          </>,
-          <>
-           Defined the 2024-2026 product roadmap via the Access North Star vision.
-          </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-
-          {
-            src: "/images/projects/access-north-star/overview.png",
-            alt: "J.P. Morgan Access North Star Overview",
-            width: 16,
-            height: 9,
-          },
-           {
-            src: "/images/projects/access-north-star/payment-overview.png",
-            alt: "J.P. Morgan Payment Overview",
-            width: 16,
-            height: 9,
-          },
-           {
-              src: "/images/projects/glass/dashboard-before.jpg",
-              alt: "GLASS Dashboard Before",
-              width: 16,
-              height: 9,
-            },
-            {
-              src: "/images/projects/glass/dashboard-after.jpg",
-              alt: "GLASS Dashboard After",
-              width: 16,
-              height: 9,
-            },
-
         ],
       },
       {
-        company: "Vimeo",
-        timeframe: "2022-2023", // Example timeframe - adjust as needed
-        role: "UX/UI Designer (Project-Based)",
+        company: "HD Studio (Freelance)",
+        timeframe: "Aug 2020 – May 2022", // Example timeframe - adjust as needed
+        role: "Product Designer",
         achievements: [
-          <>
-            Redesigned Vimeo's video analytics section, improving the user
-            experience of the dashboard, streamlining filtering, and adding new
-            features based on user feedback.
-          </>,
-          // Add other achievements from your Vimeo project
         ],
         images: [
-             {
-                src: "/images/projects/vimeo-analytics/dashboard-before.jpg",
-                alt: "Vimeo Analytics Dashboard Before",
-                width: 16,
-                height: 9,
-              },
-              {
-                src: "/images/projects/vimeo-analytics/dashboard-after.jpg",
-                alt: "Vimeo Analytics Dashboard After",
-                width: 16,
-                height: 9,
-              },
-              {
-                src: "/images/projects/vimeo-analytics/filter-before.jpg",
-                alt: "Vimeo Analytics Filter Before",
-                width: 16,
-                height: 9,
-              },
         ],
       },
       {
-        company: "Freelance",
-        timeframe: "2018 - 2022", // Example timeframe, combine if it overlaps
-        role: "Product Designer",
+        company: "TD Canada Trust",
+        timeframe: "Mar 2020 – Jun 2021", // Example timeframe, combine if it overlaps
+        role: "UX Consultant",
         achievements: [
-          <>
-            Collaborated with various clients on diverse design projects, including website redesigns, mobile app development, and branding initiatives.
-          </>,
-          <>
-           Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.
-          </>,
-          // Add other freelance achievements.  Be specific!
+        ],
+        images: [],
+      },
+      {
+        company: "iMerciv",
+        timeframe: "Nov 2019 – Mar 2020", // Example timeframe, combine if it overlaps
+        role: "UX Researcher",
+        achievements: [
         ],
         images: [],
       },
     ],
   },
+  /*studies: {
+    display: true,
+    title: "Education",
+    institutions: [
+      { name: "eCornell", description: <>Certificate, Design Thinking (2023)</> },
+      { name: "Google", description: <>UX Design Certificate (2022)</> },
+      { name: "Interaction Design Foundation", description: <>UX Design Bootcamp (2021)</> },
+      { name: "University of Oxford", description: <>Summer Abroad Program (2019)</> },
+      { name: "University of Toronto", description: <>B.Com., Finance & Economics (2016–2020)</> },
+    ],
+  },*/
   studies: {
-    display: true, // set to false to hide this section
-    title: "Education", // Changed to "Education" - more standard
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "Cornell University",  // Replace with your actual university
-        description: <>B.S. in Information Science</>, // Replace with your degree
+        name: "eCornell",
+        description: <>Certificate, Design Thinking (2023)</>,
+        logo: "/images/logos/ecornell.png",
       },
-        {
-        name: "eCornell",  // Replace with your actual university
-        description: <>Certificate, Design Thinking</>, // Replace with your degree
+      {
+        name: "Google x Udemy",
+        description: <>UX Design Certificate (2022)</>,
+        logo: "/images/logos/google.png",
       },
-      // Add more education entries as needed.
+      {
+        name: "Interaction Design Foundation",
+        description: <>UX Design Bootcamp (2021)</>,
+        logo: "/images/logos/idf.png",
+      },
+      {
+        name: "University of Oxford",
+        description: <>Summer Abroad Program (2019)</>,
+        logo: "/images/logos/oxford.png",
+      },
+      {
+        name: "University of Toronto",
+        description: <>B.Com., Finance & Economics (2016–2020)</>,
+        logo: "/images/logos/ut_coa.png",
+      },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical Skills",
+    display: true,
+    title: "Skills",
     skills: [
-      {
-        title: "Figma",
-        description: (
-          <>
-            Proficient in using Figma for UI design, prototyping, and
-            collaboration.  Experienced in creating and maintaining design
-            systems within Figma.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-
-        ],
-      },
-      {
-        title: "HTML, CSS, JavaScript", // Grouped fundamental web technologies
-        description: (
-          <>
-            Strong understanding of front-end development principles.  Capable
-            of building static websites and prototypes.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "React & Next.js",
-        description: (
-          <>
-            Experience with React and Next.js for building dynamic web
-            applications.  Familiar with component-based architecture and
-            server-side rendering.
-          </>
-        ),
-        images: [],
-      },
-        {
-        title: "User Research Methodologies",
-        description: (
-          <>
-            Skilled in conducting user interviews, usability testing, surveys, and data analysis to inform design decisions.
-          </>
-        ),
-        images: [],
-      },
-      {
-        title: "Agile & Lean UX",
-        description: (
-          <>
-            Experience working in Agile environments and applying Lean UX principles for iterative design and development.
-          </>
-        ),
-        images: [],
-      },
-
-      // Add other technical skills (e.g., specific design tools, prototyping tools, etc.)
-    ],
+      { title: "Proficient", description: <>Figma, Sketch, Adobe XD, Advanced Excel, InVision, Lucid Spark, Jira</> },
+      { title: "Actively Learning", description: <>After Effects, Photoshop, Illustrator</> },
+      { title: "Also Used", description: <>Microsoft Access, Microsoft Visio, Excel VBA, SQL, Tableau</> },
+    ]
   },
 };
 
