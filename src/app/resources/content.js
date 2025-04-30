@@ -9,7 +9,8 @@ const person = {
   role: "Product Designer",
   avatar: "/images/avatar_lindsay.jpg", // Make sure this path is correct
   location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
-  languages: ["English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Mandarin", "Cantonese"], // optional: Leave the array empty if you don't want to display languages
+  resume: "https://drive.google.com/file/d/1u-sG_dLWfwjvC6_-jlWI5vHMyDogXDLo/view?usp=sharing",
 };
 
 const newsletter = {
@@ -88,20 +89,22 @@ const about = {
       {
         company: "J.P. Morgan",  // Corrected company name
         timeframe: "Jun 2022 – Present", //  Use a consistent timeframe format
-        role: "Senior UX Designer",
+        role: "Senior Product Designer",
         achievements: [
         ],
         images: [
         ],
+        logo:"/images/logos/jpm.png", // Added logo for J.P. Morgan
       },
       {
-        company: "HD Studio (Freelance)",
+        company: "HD Studio",
         timeframe: "Aug 2020 – May 2022", // Example timeframe - adjust as needed
         role: "Product Designer",
         achievements: [
         ],
         images: [
         ],
+        logo:"/images/logos/hds.jpeg", 
       },
       {
         company: "TD Canada Trust",
@@ -110,6 +113,7 @@ const about = {
         achievements: [
         ],
         images: [],
+        logo:"/images/logos/td.jpeg", 
       },
       {
         company: "iMerciv",
@@ -118,6 +122,7 @@ const about = {
         achievements: [
         ],
         images: [],
+        logo:"/images/logos/im.jpeg", 
       },
     ],
   },
@@ -149,12 +154,12 @@ const about = {
       {
         name: "Interaction Design Foundation",
         description: <>UX Design Bootcamp (2021)</>,
-        logo: "/images/logos/idf.png",
+        logo: "/images/logos/idflogo.png",
       },
       {
         name: "University of Oxford",
         description: <>Summer Abroad Program (2019)</>,
-        logo: "/images/logos/oxford.png",
+        logo: "/images/logos/oxford.jpg",
       },
       {
         name: "University of Toronto",
@@ -163,13 +168,17 @@ const about = {
       },
     ],
   },
+
+
+
+
   technical: {
     display: true,
     title: "Skills",
     skills: [
       { title: "Proficient", description: <>Figma, Sketch, Adobe XD, Advanced Excel, InVision, Lucid Spark, Jira</> },
-      { title: "Actively Learning", description: <>After Effects, Photoshop, Illustrator</> },
-      { title: "Also Used", description: <>Microsoft Access, Microsoft Visio, Excel VBA, SQL, Tableau</> },
+      // { title: "Actively Learning", description: <>After Effects, Photoshop, Illustrator</> },
+      { title: "Working Knowledge", description: <>Web Development, Microsoft Access, Microsoft Visio, Excel VBA, SQL, Tableau</> },
     ]
   },
 };

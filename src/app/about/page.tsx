@@ -6,6 +6,7 @@ import {
   Heading,
   Icon,
   IconButton,
+  Row,
   SmartImage,
   Tag,
   Text,
@@ -128,6 +129,17 @@ export default function About() {
                 ))}
               </Flex>
             )}
+            <Button
+              href={person.resume}
+              variant="primary"
+              weight="default"
+              size="l"
+              style={{
+                justifyContent: "flex-start", // push icon + text left
+              }}
+            >
+              📄 View Resume
+            </Button>
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
@@ -136,7 +148,7 @@ export default function About() {
             fillWidth
             minHeight="160"
             vertical="center"
-            marginBottom="32"
+            marginBottom="40"
           >
             {about.calendar.display && (
               <Flex
@@ -242,29 +254,48 @@ export default function About() {
                     key={`${experience.company}-${experience.role}-${index}`}
                     fillWidth
                   >
-                    <Flex
-                      fillWidth
-                      horizontal="space-between"
-                      vertical="end"
-                      marginBottom="4"
-                    >
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                      <Text
-                        variant="heading-default-xs"
-                        onBackground="neutral-weak"
+                    <Row>
+                      <Avatar
+                        style={{
+                          marginLeft: "-0.75rem",
+                          marginRight: "0.25rem",
+                        }}
+                        src={experience.logo}
+                        size="l"
+                      />
+
+                      <Flex
+                        fillWidth
+                        horizontal="space-between"
+                        vertical="center"
+                        marginBottom="4"
                       >
-                        {experience.timeframe}
-                      </Text>
-                    </Flex>
-                    <Text
-                      variant="body-default-s"
-                      onBackground="brand-weak"
-                      marginBottom="m"
-                    >
-                      {experience.role}
-                    </Text>
+                        <Column>
+                          <Text
+                            id={experience.company}
+                            variant="heading-strong-l"
+                          >
+                            {experience.company}
+                          </Text>
+                          <Text
+                            variant="heading-default-xs"
+                            onBackground="brand-strong"
+                            marginBottom="4"
+                          >
+                            {experience.role}
+                          </Text>
+                        </Column>
+                        <Column>
+                          <Text
+                            variant="heading-default-xs"
+                            onBackground="neutral-strong"
+                          >
+                            {experience.timeframe}
+                          </Text>
+                        </Column>
+                      </Flex>
+                    </Row>
+
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
                         (achievement: JSX.Element, index: number) => (
@@ -309,19 +340,6 @@ export default function About() {
               </Column>
             </>
           )}
-          <Button
-            href={``}
-            suffixIcon="chevronRight"
-            variant="secondary"
-            weight="default"
-            size="l"
-            style={{
-              justifyContent: "flex-start", // push icon + text left
-            }}
-          >
-            📄 View Resume
-          </Button>
-
           {/* some space */}
           <div style={{ height: "40px" }} />
 
@@ -342,20 +360,36 @@ export default function About() {
                     fillWidth
                     gap="4"
                   >
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    <Text
-                      variant="heading-default-xs"
-                      onBackground="neutral-weak"
-                    >
-                      {institution.description}
-                    </Text>
+                    <Row>
+                      <Avatar
+                        style={{
+                          marginLeft: "-0.75rem",
+                          marginRight: "0.25rem",
+                        }}
+                        src={institution.logo}
+                        size="l"
+                      />
+
+                      <Column>
+                        <Text id={institution.name} variant="heading-strong-l">
+                          {institution.name}
+                        </Text>
+                        <Text
+                          variant="heading-default-xs"
+                          onBackground="neutral-strong"
+                        >
+                          {institution.description}
+                        </Text>
+                      </Column>
+                    </Row>
                   </Column>
                 ))}
               </Column>
             </>
           )}
+
+          {/* some space */}
+          <div style={{ height: "40px" }} />
 
           {about.technical.display && (
             <>
@@ -371,7 +405,10 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
+                    <Text
+                      variant="body-default-m"
+                      onBackground="neutral-strong"
+                    >
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
