@@ -19,7 +19,7 @@ import { person, about, social } from "@/app/resources/content";
 export async function generateMetadata() {
   const title = about.title;
   const description = about.description;
-  const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+  const ogImage = "/images/about/about.png";
 
   return {
     title,
@@ -129,28 +129,8 @@ export default function About() {
                 ))}
               </Flex>
             )}
-            <Button
-              href={person.resume}
-              variant="primary"
-              weight="default"
-              size="l"
-              style={{
-                justifyContent: "flex-start", // push icon + text left
-              }}
-            >
-              📄 View Resume
-            </Button>
-          </Column>
-        )}
-        <Column className={styles.blockAlign} flex={9} maxWidth={40}>
-          <Column
-            id={about.intro.title}
-            fillWidth
-            minHeight="160"
-            vertical="center"
-            marginBottom="40"
-          >
-            {about.calendar.display && (
+             <Column gap="m" horizontal="center">
+             {about.calendar.display && (
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -162,7 +142,7 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
-                marginBottom="m"
+                //marginBottom="m"
                 vertical="center"
               >
                 <Icon
@@ -179,6 +159,30 @@ export default function About() {
                 />
               </Flex>
             )}
+
+            <Button
+              href={person.resume}
+              variant="primary"
+              weight="default"
+              size="l"
+              style={{
+                justifyContent: "flex-start", // push icon + text left
+              }}
+            >
+              📄 View Resume
+            </Button>
+          </Column>
+        </Column>
+        )}
+        <Column className={styles.blockAlign} flex={9} maxWidth={40}>
+          <Column
+            id={about.intro.title}
+            fillWidth
+            minHeight="160"
+            vertical="center"
+            marginBottom="40"
+          >
+
             <Heading className={styles.textAlign} variant="display-strong-m">
               {person.name}
             </Heading>
@@ -258,7 +262,7 @@ export default function About() {
                       <Avatar
                         style={{
                           marginLeft: "-0.75rem",
-                          marginRight: "0.25rem",
+                          marginRight: "1rem",
                         }}
                         src={experience.logo}
                         size="l"
@@ -364,7 +368,7 @@ export default function About() {
                       <Avatar
                         style={{
                           marginLeft: "-0.75rem",
-                          marginRight: "0.25rem",
+                          marginRight: "1rem",
                         }}
                         src={institution.logo}
                         size="l"
