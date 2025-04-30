@@ -84,7 +84,7 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Snapshot",
+    title: "Experiences",
     experiences: [
       {
         company: "J.P. Morgan",  // Corrected company name
