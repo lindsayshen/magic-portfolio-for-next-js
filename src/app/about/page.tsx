@@ -19,7 +19,8 @@ import { person, about, social } from "@/app/resources/content";
 export async function generateMetadata() {
   const title = about.title;
   const description = about.description;
-  const ogImage = "/images/about/about.png";
+  const ogImage = "https://lindsayshen.com/images/thumbnail/about.png";
+  const pageUrl = "https://lindsayshen.com/about";
 
   return {
     title,
@@ -28,7 +29,7 @@ export async function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://${baseURL}/about`,
+      url: pageUrl,
       images: [
         {
           url: ogImage,
