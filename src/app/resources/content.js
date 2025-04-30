@@ -154,7 +154,7 @@ const about = {
       {
         name: "Interaction Design Foundation",
         description: <>UX Design Bootcamp (2021)</>,
-        logo: "/images/logos/idflogo.png",
+        logo: "/images/logos/idf.png",
       },
       {
         name: "University of Oxford",
