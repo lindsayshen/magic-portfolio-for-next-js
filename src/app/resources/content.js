@@ -10,7 +10,7 @@ const person = {
   avatar: "/images/avatar_lindsay.jpg", // Make sure this path is correct
   location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
   languages: ["English", "Mandarin", "Cantonese"], // optional: Leave the array empty if you don't want to display languages
-  resume: "https://drive.google.com/file/d/1u-sG_dLWfwjvC6_-jlWI5vHMyDogXDLo/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/17BVGmsFHZWDQW59S6qcG2CvrlFvFicEZ/view?usp=sharing",
 };
 
 const newsletter = {
@@ -47,7 +47,7 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  description: `Portfolio website showcasing Lindsay Shen's work as a ${person.role}`,
   headline: <>Product Designer and Builder</>,
   subline: (
     <>
