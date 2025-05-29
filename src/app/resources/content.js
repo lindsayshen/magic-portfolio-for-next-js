@@ -10,7 +10,7 @@ const person = {
   avatar: "/images/avatar_lindsay.jpg", // Make sure this path is correct
   location: "New York, NY", //  Simplified for display; use IANA for time zone calculations if needed.
   languages: ["English", "Mandarin", "Cantonese"], // optional: Leave the array empty if you don't want to display languages
-  resume: "https://drive.google.com/file/d/17BVGmsFHZWDQW59S6qcG2CvrlFvFicEZ/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1BO58sYBKoWL28S34Nj1gaoczpqpXW60J/view?usp=sharing",
 };
 
 const newsletter = {
