@@ -151,6 +151,7 @@ const components = {
   a: CustomLink as any,
   Table,
   CodeBlock,
+  Text,
 };
 
 type CustomMDXProps = MDXRemoteProps & {

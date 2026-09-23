@@ -9,11 +9,9 @@ import {
   Heading,
   SmartImage,
   SmartLink,
-  Text,
 } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { person } from "@/app/resources/content";
-import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
 interface WorkParams {
@@ -147,15 +145,22 @@ export default function Project({ params }: WorkParams) {
           }}
         />
       )}
-      <Column style={{ margin: "auto", width: "100%" }} as="article">
-        <Flex gap="12" marginBottom="24" vertical="center">
-          {post.metadata.team && (
+      <Column
+        style={{
+          margin: "auto",
+          width: "100%",
+          // Tighten the gap the parent Column's gap="l" leaves between the cover
+          // image and the first line of content. Scales with the responsive token,
+          // so it stays safe at every breakpoint (40 / 24 / 16px).
+          marginTop: "calc(var(--responsive-space-l) * -0.5)",
+        }}
+        as="article"
+      >
+        {post.metadata.team && (
+          <Flex gap="12" marginBottom="24" vertical="center">
             <AvatarGroup reverse avatars={avatars} size="m" />
-          )}
-          <Text variant="body-default-s" onBackground="neutral-weak">
-            {formatDate(post.metadata.publishedAt)}
-          </Text>
-        </Flex>
+          </Flex>
+        )}
         <CustomMDX source={post.content} />
       </Column>
 
